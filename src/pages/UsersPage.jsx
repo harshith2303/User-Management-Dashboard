@@ -32,10 +32,6 @@ const UsersPage = () => {
 
   return (
     <div className="p-6">
-      <div className="flex justify-between mb-4">
-        <SearchBar onSearch={setSearch} />
-        <button onClick={() => navigate("/add")} className="bg-blue-500 text-white px-4 py-2 rounded">Add User</button>
-      </div>
       <UserTable
         users={filteredUsers.slice((page - 1) * limit, page * limit)}
         onEdit={(u) => navigate(`/edit/${u.id}`, { state: u })}
