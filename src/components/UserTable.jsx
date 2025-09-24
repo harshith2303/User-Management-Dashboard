@@ -12,7 +12,7 @@ export default function UserTable() {
   const [page, setPage] = useState(1);
   const [limit, setLimit] = useState(10);
 
-  // Fetch users from JSONPlaceholder
+  
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -34,7 +34,7 @@ export default function UserTable() {
     }
   };
 
-  // Delete user (simulated)
+  
   const handleDelete = async (id) => {
     if (!window.confirm("Delete this user?")) return;
     try {
@@ -46,7 +46,7 @@ export default function UserTable() {
     }
   };
 
-  // Edit user (simulated)
+  
   const handleEditSubmit = async (form) => {
     try {
       await axios.put(`https://jsonplaceholder.typicode.com/users/${editingUser.id}`, form);
@@ -58,7 +58,7 @@ export default function UserTable() {
     }
   };
 
-  // Add user (simulated)
+  
   const handleAddSubmit = async (form) => {
     try {
       const res = await axios.post("https://jsonplaceholder.typicode.com/users", form);
@@ -70,7 +70,7 @@ export default function UserTable() {
     }
   };
 
-  // Search & sort
+  
   let displayed = [...users].filter(u =>
     u.name.toLowerCase().includes(search.toLowerCase()) ||
     u.email.toLowerCase().includes(search.toLowerCase()) ||
@@ -85,7 +85,7 @@ export default function UserTable() {
     });
   }
 
-  // Pagination
+  
   const totalPages = Math.ceil(displayed.length / limit);
   displayed = displayed.slice((page - 1) * limit, page * limit);
 
@@ -155,7 +155,7 @@ export default function UserTable() {
         </table>
       </div>
 
-      {/* Pagination */}
+  
       <div className="flex justify-between mt-4 items-center">
         <div>
           <span>Rows per page: </span>
