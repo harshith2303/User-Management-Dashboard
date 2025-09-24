@@ -123,7 +123,7 @@ export default function UserTable() {
               <th className="p-3 cursor-pointer" onClick={() => { setSortKey("name"); setSortOrder(sortOrder === "asc" ? "desc" : "asc"); }}>Name</th>
               <th className="p-3">Username</th>
               <th className="p-3 cursor-pointer" onClick={() => { setSortKey("email"); setSortOrder(sortOrder === "asc" ? "desc" : "asc"); }}>Email</th>
-              <th className="p-3 cursor-pointer" onClick={() => { setSortKey("company"); setSortOrder(sortOrder === "asc" ? "desc" : "asc"); }}>Department</th>
+              <th className="p-3 cursor-pointer" onClick={() => { setSortKey("company"); setSortOrder(sortOrder === "asc" ? "desc" : "asc"); }}>Company Name</th>
               <th className="p-3">Actions</th>
             </tr>
           </thead>

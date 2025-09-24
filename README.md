@@ -21,14 +21,16 @@ user-management-dashboard/
 │   └── index.js                # Entry point
 └── package.json
 
-git commands used are:
+git commands used are and git repo (https://github.com/harshith2303/User-Management-Dashboard)
 
 git init
 git add .
 git commit -m"committed"
-git remote add origin https://github.com/your-username/user-management-app.git
+git remote add origin https://github.com/harshith2303/User-Management-Dashboard.git
 git branch -M main
 git push -u origin main
 
 
+SORting:
 
+If you click on id, name, username, email, companyName sorting takes place assending and descending.
