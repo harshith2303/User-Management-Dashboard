@@ -32,6 +32,8 @@ const UsersPage = () => {
 
   return (
     <div className="p-6">
+      <h1 style={{textAlign:"center"}}><bold>USER MANAGEMENT DASHBOARD</bold></h1>
+      <br></br>
       <UserTable
         users={filteredUsers.slice((page - 1) * limit, page * limit)}
         onEdit={(u) => navigate(`/edit/${u.id}`, { state: u })}

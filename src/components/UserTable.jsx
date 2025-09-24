@@ -160,7 +160,7 @@ export default function UserTable() {
         <div>
           <span>Rows per page: </span>
           <select value={limit} onChange={e => { setLimit(Number(e.target.value)); setPage(1); }} className="border p-1 rounded">
-            {[10, 25, 50, 100].map(n => <option key={n} value={n}>{n}</option>)}
+            {[5, 10, 25, 50, 100].map(n => <option key={n} value={n}>{n}</option>)}
           </select>
         </div>
         <div className="flex gap-2">
