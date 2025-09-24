@@ -31,6 +31,13 @@ git branch -M main
 git push -u origin main
 
 
+
+Vercel Deployment link: (https://user-management-dashboard-gamma-mocha.vercel.app/)
+
+
 SORting:
 
 If you click on id, name, username, email, companyName sorting takes place assending and descending.
+
+As there is no department in the Backend Api. So, instead of department added CompanyName.
+
